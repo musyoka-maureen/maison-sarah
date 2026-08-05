@@ -34,11 +34,87 @@
           ><em>We are here to serve you.</em>
         </h1>
         <p>
-          We are here to serve you! You asked for pre orders and we've been
-          working behind the scenes to make it a reality. Starting next week
-          Thursday we will be live with pre orders. You will be able to make
-          your pre orders with just a few clicks. Stay tuned!
+          Fill below form to place your order. We will contact you to confirm
+          your order and delivery details.
         </p>
+        <form class="field label field:focus" action="#" method="get">
+          <p>
+            <label for="customer-name">Your name</label>
+            <input
+              class="field label field:focus input"
+              type="text"
+              id="customer-name"
+              name="customer-name"
+              required
+              placeholder="Sarah Example"
+            />
+          </p>
+          <p>
+            <label for="email">Email:</label>
+            <input
+              class="field label field:focus input"
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="john.doe@example.com"
+            />
+          </p>
+          <input
+            class="choice"
+            type="radio"
+            id="day-saturday"
+            name="pickup-day"
+            value="saturday"
+            checked
+          />
+          <label for="day-saturday">Saturday</label>
+
+          <input
+            class="choice"
+            type="radio"
+            id="day-sunday"
+            name="pickup-day"
+            value="sunday"
+          />
+          <label for="day-sunday">Sunday</label>
+
+          <p>Choose your preferred pickup time:</p>
+
+          <div class="choice">
+            <input
+              class="choice"
+              type="checkbox"
+              id="time-saturday"
+              name="pickup-time"
+              value="11-12pm"
+            /><label for="time-saturday">10:00 - 11:00</label>
+          </div>
+
+          <div class="choice">
+            <input
+              class="choice"
+              type="checkbox"
+              id="time-saturday2"
+              name="pickup-time"
+              value="12-13pm"
+            /><label for="time-saturday2">11:00 - 12:00</label>
+          </div>
+
+          <div class="choice">
+            <input
+              class="choice"
+              type="checkbox"
+              id="time-saturday3"
+              name="pickup-time"
+              value="13-14pm"
+            />
+            <label for="time-saturday3">13:00 - 14:00</label>
+          </div>
+          <p><label for="Notes">Additional Notes:</label></p>
+          <textarea id="Notes" name="order" rows="4" required></textarea>
+          <p><button type="submit">Submit Order</button></p>
+        </form>
       </main>
     </div>
     <footer class="container">&copy; All rights reserved</footer>
